@@ -1,38 +1,74 @@
 .App {
   text-align: center;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.sanpham{
+  display: flex;
+  justify-content: space-around;
+  margin-top: 100px;
+  flex-wrap: wrap;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+
+.sanpham-con{
+  background-color: black;
+  color: white;
+  width: 200px;
+  border-radius: 15px;
+}
+.image-container {
+  position: relative;
+  display: inline-block;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.image-container img {
+  transition: transform 0.3s ease;
+  width: 200px;
+  height: 200px;
+}
+
+.image-container:hover img {
+  transform: scale(1.1); /* Phóng to ảnh lên 110% */
+}
+.text {
+background-color: #22262A;
+border-radius: 10px;
+}
+.textNone{
+  display: none;
+}
+.duagiohang{
+  background-color: black;
+  color: white;
+  border: none;
+  margin-left: 150px;
+}
+.card{
+  display: flex;
+  flex-direction: row-reverse;
+  font-size: 2em;
+  padding: 20px;
+}
+.tableGio{
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  text-align: center;
 }
-
-.App-link {
-  color: #61dafb;
+.tableGio table{
+  border: 3px solid black;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.tableGio table tr th{
+  border: 1px solid black;
+}
+.tableGio table tr td{
+  border: 1px solid black;
+}
+.cardNone{
+  display: none;
+}
+.soluong{
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  padding: 1px;
 }
